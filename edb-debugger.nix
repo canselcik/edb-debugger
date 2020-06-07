@@ -5,9 +5,9 @@ stdenv.mkDerivation {
   src = pkgs.fetchFromGitHub {
     owner = "canselcik";
     repo = "edb-debugger";
-    rev = "f552269818e5b4eb906cea73e8f15691c7866cd9";
+    rev = "c04556fd887b613005a866442adbfe780211b8b5";
     sha256 = "0a892mms1lbj556yk7qk5ddi5hhg5z4awbciva9w2g70kh6274w3";
+    fetchSubmodules = true;
   };
-
   buildInputs = [ pkgconfig cmake boost capstone qt512.full double-conversion libGL graphviz ];
 }
