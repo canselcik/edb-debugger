@@ -4,7 +4,7 @@ project (edb CXX)
 enable_testing()
 
 if(NOT EXISTS "${PROJECT_SOURCE_DIR}/src/qhexview/README.md")
-	message(SEND_ERROR "The git submodules are not available. Please run:\ngit submodule update --init --recursive")
+	message(WARNING "The git submodules are not available. Please run:\ngit submodule update --init --recursive")
 endif()
 
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake/Modules/")
